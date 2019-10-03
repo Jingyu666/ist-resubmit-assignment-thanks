@@ -1,0 +1,101 @@
+Part 1: the brainstorming (we choose to create a totally new project to focus more on the course material from IST perspectives)
+
+Idea 1: the food delivery 
+Our first idea is about the food delivery. Nowadays, more and more people prefer to stay at home, order food in the online application and then let the workers in the restaurant deliver the food to their home so they can enjoy the food even without going out. This is not a new business industry, but it actually still makes improvements to cover more restaurants and make more users known and use it more often. The unique part of this business, we think, is that this business actually can indicate the change of people’s living style. We are actually users of this new thing. Imagine this: we go back home after one day’s course and feel too exhausted to cook the food. We just use the phone to make an order online and we can choose whatever we like eating through the platforms. We can also track the delivery process and have access to our order history. Thus, the five tables are pretty clear. They look like as follows:
+
+Entity 1: 
+user
+Attributes: 
+user-ID
+user-name
+user-address
+user-phone-number
+current-order
+payment-history 
+
+Entity 2: 
+order
+Attributes: 
+order-ID
+order-items
+order-price
+user-address
+user-phone-number
+user-name
+
+Entity 3: 
+food 
+Attributes: 
+food-ID
+food-price
+food-types
+food-recommendation
+
+Entity 4:
+delivery
+Attributes: 
+delivery-ID
+delivery-employee
+delivery-employee-phone-number
+timeline-tracking
+user-name
+user-address
+user-phone-number
+
+Entity 5: 
+payment history 
+Attributes: 
+history-ID
+user-name
+ordered-items
+order-price
+service-ranking
+
+There should be a lot of relationships among these five tables. Users’ information like the phone number and address needs to be included in the order, the delivery and the payment history. This is just one example. This is what we will do more detailed in the second part. 
+
+
+Idea 2: the book store
+This reason why we come up with this idea is that this is a business type which is really close to our daily life. We are the customers there. We buy books there. We think this is not a pretty new business industry. However, this is part of our daily life. We are familiar with that so we think we can do the things that are associated with the book store. The most unique of this idea is that we would like to put the membership into this idea. This means we can have the customers to be the members. Maybe they can have some discounts when the birthday month is coming or have some points in the membership cards which can be transferred to replace some money needed on a day of a month. We think that this type of traditional business might need more methods to attract the customers when the digital books are becoming more and more popular. We also have five tables to indicate this idea more clearly. In the book store, there are always some interactions between the customers and cashiers. They look like as follows:
+
+Entity 1: book
+Attributes: book-ID, book-type, book-price
+Entity 2: cashier
+Attributes: cashier-ID, cashier-name, operation-date, operation-time, book-ID
+Entity 3: buyer
+Attributes: buyer-ID, book-type, book-price
+Entity 4: payment 
+Attributes: payment-ID, payment-method, payment-date, user-ID, cashier-ID, book-price
+Entity 5: member ship 
+Attributes: membership-ID, buyer-ID, Buyer-points, Buyer-birthdate
+
+Obviously, there are a lot of relationships among these five tables. The book type and price need to be included in the book information and also in the payment information. Besides, the book information also needs to be included in the cashier’s operation because the owner of the book store sometimes would like to check the books that have been sold and check whether the profit is correct.
+
+Idea 3: online ranking application 
+Nowadays, there are a lot of ranking system application online. They are used to give the users some suggestions. For example, there is a new-opening restaurant. Some people who are pretty curious go to there to have a try, and then they give the rank of the restaurant in the application as well as some comments. Besides, there are some users who would like to make some interactions. For example, if there is a person who makes a recommendation, some users might ask at the bottom about the price level, the address, and some more specific recommendations. At this point, we think the idea should be clearer. What makes this idea unique is that we think this idea is pretty new and more and more users are willing to have a try. This type of application is becoming more and more popular and gradually the ranking becomes a standard to decide whether to have a try or not. Besides, some of the businessmen also invite some people to have a try and give their positive comments, which becomes a popular method of advertising nowadays. Here are the five tables:
+
+Entity 1: user
+Attributes: user-ID, user-name, user-gender
+Entity 2: ranking 
+Attributes: ranking-ID, user-name, ranking-level, ranking-comments
+Entity 3: ranking item
+Attributes: item-ID, item-type, overall-ranking, item-address, item-contact-info
+Entity 4: ranking response 
+Attributes: response-ID, user-name, user-gender, response-attitude
+Entity 5: ranking history 
+Attributes: history-ID, user-name, user-gender, item-type, ranking-level
+
+The reason why we add the ranking history here is that a lot of applications nowadays are using the history to explore the users’ preferences. There are a lot of relationships among these five tables. There is one thing that we would like to explore more: the reason why we care about the gender is the ranking item and the ranking history are much related to the gender. Women and men care about the different things. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
