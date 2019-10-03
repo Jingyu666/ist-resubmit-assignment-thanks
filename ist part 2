@@ -1,0 +1,76 @@
+Part 2: 
+Our group decides to use the first idea to continue the project. We can find a lot of relationships among the five tables. The entities and attributes are also pretty clear and logical. Let us emphasize what the five tables look like here:
+
+Entity 1: 
+user
+Attributes: 
+user-ID
+user-name
+user-address
+user-phone-number
+current-order
+payment-history 
+
+Entity 2: 
+order
+Attributes: 
+order-ID
+order-items
+order-price
+user-address
+user-phone-number
+user-name
+
+Entity 3: 
+food 
+Attributes: 
+food-ID
+food-price
+food-type
+food-recommendation
+
+Entity 4:
+delivery
+Attributes: 
+delivery-ID
+delivery-employee
+delivery-employee-phone-number
+timeline-tracking
+user-name
+user-address
+user-phone-number
+
+Entity 5: 
+payment history 
+Attributes: 
+history-ID
+user-name
+ordered-items
+order-price
+service-ranking
+ 
+First, we would like to explain the five entities one by one by illustrating more about some attributes and the reason why we think we need to include some attributes. 
+
+The user entity is the first one we come up with. Certainly, when we consider any systems and applications, we should consider the user. Then, we think much about the attributes. When users create an account on the food delivery platform, they need to type in the name which does not need to be real but the name they would like to be addressed. Then, the accurate telephone number and the address should be included for sure. These two should be the most necessary in a food delivery system. In any food delivery system, we can see there is a part called the ordering record which displays what the users have ordered or are ordering. This is the part which the users can have access and track their order. 
+
+The order table here is more likely refer to the recent order. For example, a user just ordered some food but does not receive. This is pretty like a bill paper after the user just order some food. There should be the food type, the food price for unique. For the online food delivery system, the user’s name, phone number and address should be included as well. 
+
+The delivery entity is pretty dynamic part. In some food delivery system, users can have access to the worker who are responsible for the delivery, his/her name, his/her name. Also, the users’ information also needs to be included. The timeline-tracking can let the users know when the food might reach their home. 
+
+The food entity is pretty easy. The table just displays the food type the users can order in the restaurant they choose and the price list. The unique part here is the food recommendation. The reason why we add this is that some restaurants always choose to use some today’s specials, chief’s recommendation or just the most popular dishes to help the new customers to find what they want. 
+
+The order history part is what we would like to do to show what the system should be like more vividly. This order system always lets the users have access to what they have ordered. Some people might not want to explore some new things and then choose to order something they have already tried. This part is also used to track the user’s preferences and make some recommendations automatically. The service ranking is also provided for the users to judge the quality and help them decide whether to have a try again. 
+
+Second, we would like to illustrate more about the relationships here. 
+One user can have one and more orders that is processing. 1-to-many 
+One order can just have one user.  1-to-1
+One user can have more than one order history. 1-to-many 
+One order history can just have one user. 1-to-1
+One processing order can just be ordered by one user and delivered by one worker. 1-to-1 
+One user can order several types of food in one restaurant. 1-to-many
+One delivery worker can deliver several food types. 1-to-many 
+One user can have multiple processing deliveries. 1-to-many 
+One delivery can just have one use. 1-to-1
+One order can just have one history. 1-to-1
+We will show the relationships more clearly in the ER. 
+
